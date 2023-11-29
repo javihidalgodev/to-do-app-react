@@ -1,0 +1,23 @@
+.footer {
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer a {
+  color: #242424;
+  line-height: 0;
+}
+
+.footer a:active {
+  color: #05d;
+}
+
+@media (hover: hover) {
+  .footer a:hover {
+    color: #05d;
+  }
+}
