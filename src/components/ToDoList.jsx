@@ -4,7 +4,8 @@ import TaskForm from "./TaskForm"
 import Task from "./Task"
 
 export default function ToDoList () {
-  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')))
+  const initData = JSON.parse(localStorage.getItem('todos'))
+  const [todos, setTodos] = useState(initData ? initData : [])
 
   const addTask = task => {
     setTodos([task, ...todos])
